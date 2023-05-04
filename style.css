@@ -1,0 +1,207 @@
+body {
+    background: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.font-large {
+    font-size: 1.5rem;
+}
+
+.mary-2 {
+    margin-top: 2rem;
+}
+
+.green {
+    border: solid 2px #1AC5B0;
+    color: #1AC5B0;
+}
+
+.lgreen {
+    border: solid 2px #71cfc4;
+    color: #71cfc4;
+}
+
+.blue {
+    border: solid 2px #5580ff;
+    color: #5580ff;
+}
+
+.lblue {
+    border: solid 2px #99bff7;
+    color: #99bff7;
+}
+
+.red {
+    border: solid 2px #be1825;
+    color: #be1825;
+}
+
+.orange {
+    border: solid 2px #f1c232;
+    color: #f1c232;
+}
+
+.purple {
+    border: solid 2px #ee52ff;
+    color: #ee52ff;
+}
+
+.lgrey {
+    border: solid 2px lightgray;
+    color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    width: 100%;
+    border: solid 1px #ee52ff;
+}
+
+.actionMenu {
+    display: flex;
+    flex: 1 200px;
+    flex-direction: column;
+    border-right: solid 1px #ee52ff;
+    padding: 1rem;
+}
+
+.actionRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.actionItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65px;
+    width: 100px;
+    margin: 0.5rem 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: auto;
+    border-radius: 0.5rem;
+}
+
+.actionItem:hover {
+    background: white;
+    color: black;
+}
+
+.actionItem:active {
+    background:#ee52ff;
+}
+
+.actionProgram {
+    display: flex;
+    flex: 1 200px;
+    flex-direction: column;
+    border-right: solid 1px #ee52ff;
+    
+}
+
+.actionProgram .programBox {
+    flex: 1 90%;
+    display: flex;
+    flex-direction: column;
+    background: #0e1020;
+    border-bottom: solid 1px #ee52ff;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.actionProgram .button {
+    width: 95%;
+    border-radius: 1rem;
+    align-self:center;
+    text-align: center;
+    margin: 0.25rem 0rem;
+    padding: 0.5rem 0rem;
+    border: solid 1px black;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#run {
+    background:#5580ff;
+}
+#run:hover {
+    background: #99bff7;
+}
+#run:active {
+    background: #2349ba;
+}
+
+#reset {
+    background:#be1825;
+}
+
+#reset:hover {
+    background:rosybrown;
+}
+
+#reset:active {
+    background:rgb(113, 22, 22);
+}
+
+.map {
+    display: flex;
+    width: 100%;
+}
+
+.messageBox {
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    min-height: 200px;
+    background:#0e201e;
+    color: lightgrey;
+    border: solid 1px #ee52ff;
+    font-weight: normal;
+}
+
+.messageBox h3{
+    margin: 0;
+    color: green;
+    border-bottom: solid 1px green;
+}
+
+.hideWinMessage {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 75%;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 54pt;
+    background: black;
+    color: aliceblue;
+    transition: opacity 3s;
+}
+
+.showWinMessage {
+    opacity: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 75%;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 54pt;
+    background: black;
+    color: aliceblue;
+    transition: opacity 3s;
+}
