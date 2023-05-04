@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="actionMenu">
+            <div class="actionRow">
+                <div class="actionItem green" id="nav"><p>UP</p></div>
+                <div class="actionItem green" id="nav"><p>DOWN</p></div>
+            </div>
+            <div class="actionRow">
+                <div class="actionItem green" id="nav"><p>LEFT</p></div>
+                <div class="actionItem green" id="nav"><p>RIGHT</p></div>
+            </div>
+            <div class="actionRow mary-2">
+                <div class="actionItem orange" id="action"><p>ACTIVATE</p></div>
+                <div class="actionItem orange" id="action"><p>RECHARGE</p></div>
+            </div>
+            <div class="actionRow mary-2">
+                <div class="actionItem blue" id="loop"><p>LOOP</p></div>
+            </div>
+            <div class="actionRow mary-2">
+                <div class="actionItem lgrey font-large" id="num"><p>1</p></div>
+                <div class="actionItem lgrey font-large" id="num"><p>2</p></div>
+            </div>
+            <div class="actionRow mary-1">
+                <div class="actionItem lgrey font-large" id="num"><p>3</p></div>
+                <div class="actionItem lgrey font-large" id="num"><p>4</p></div>
+            </div>
+            <div class="actionRow mary-1">
+                <div class="actionItem lgrey font-large" id="num"><p>5</p></div>
+                <div class="actionItem lgrey font-large" id="num"><p>6</p></div>
+            </div>
+            <div class="actionRow mary-1">
+                <div class="actionItem lgrey font-large" id="num"><p>7</p></div>
+                <div class="actionItem lgrey font-large" id="num"><p>8</p></div>
+            </div>
+        </div>
+        <div class="actionProgram">
+            <div class="programBox">
+
+            </div>
+            <div class="button" id="run">RUN</div>
+            <div class="button" id="reset">RESET</div>
+        </div>
+        <div class="map">
+            <canvas id="droneMap"></canvas>
+            <div id="winMessage" class="hideWinMessage">
+                <p><span class="alien">C</span> = C</p>
+                <p><span class="alien">E</span> = E</p>
+                <p><span class="alien">P</span> = P</p>
+            </div>
+        </div>
+    </div>
+    <div class="messageBox">
+        <h3>Console</h3>
+        <p id="messageText">Whoa! There was a weird power surge from that strange device. I should check it out, but I need to make sure I have enough battery to make it there.</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
