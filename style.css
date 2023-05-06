@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'alienScript';
+    src: url('../Cybertronianfinal-Regular.ttf');
+}
+
 body {
     background: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -194,7 +199,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    height: 85%;
+    height: 800px;
     width: 75%;
     z-index: 5;
     justify-content: center;
@@ -204,4 +209,8 @@ body {
     background: black;
     color: aliceblue;
     transition: opacity 3s;
+}
+
+.alien-script {
+    font-family: "alienScript";
 }
