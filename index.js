@@ -483,8 +483,6 @@ runBut.addEventListener('click', runProgram, true);
 
 var resetProgram = (success, event) => {
 
-    gameOver = true;
-
     while(programBox.firstChild){
         programBox.removeChild(programBox.firstChild);
     }
@@ -514,11 +512,13 @@ var resetProgram = (success, event) => {
         "Well that didn't work...",
         "Think like a proton....always positive!",
         '"Trying is the first step towards failure" - Homer Simpson',
-        "That's ok, this really is my favorite square of barren wasteland."
+        "That's ok, this really is my favorite square of barren wasteland.",
+        '"Go to space!" they said... "See the Universe!" they said...',
+        "Space space space space space space space space space space"
     ]
 
     if(!success){
-        var _ind = Math.floor(Math.random() * 5);
+        var _ind = Math.floor(Math.random() * resetMessages.length);
         writeMessage(resetMessages[_ind])
     }
     
